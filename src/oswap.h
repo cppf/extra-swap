@@ -69,15 +69,15 @@
 
 
 // Swap variables.
-// args: vara, varb.
-#define OSWAP(A, B) \
-	OSWAP_XOR(A, B)
+// args: varx, vary.
+#define OSWAP(X, Y) \
+	OSWAP_XOR(X, Y)
 
 
 // Swap individual bits.
-// args: vara, varb, bits-value.
-#define OSWAP_BITS(A, B, V) \
-	OSWAP_BITSXOR(A, B, V)
+// args: varx, vary, bits.
+#define OSWAP_BITS(X, Y, B) \
+	OSWAP_BITSXOR(X, Y, B)
 #pragma endregion
 
 
