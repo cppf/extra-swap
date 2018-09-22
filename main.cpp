@@ -9,32 +9,32 @@ int main() {
 	printf("b = 0x%X.\n", b);
 	printf("\n");
 
-	OSWAP_VAR(a, b, int);
-	printf("OSWAP_VAR(a, b, int).\n");
+	ESWAP_VAR(a, b, int);
+	printf("ESWAP_VAR(a, b, int).\n");
 	printf("a = 0x%X.\n", a);
 	printf("b = 0x%X.\n", b);
 	printf("\n");
 
-	OSWAP_BUF(a, b);
-	printf("OSWAP_BUF(a, b).\n");
+	ESWAP_BUF(a, b);
+	printf("ESWAP_BUF(a, b).\n");
 	printf("a = 0x%X.\n", a);
 	printf("b = 0x%X.\n", b);
 	printf("\n");
 
-	OSWAP_ADDSUB(a, b);
-	printf("OSWAP_ADDSUB(a, b).\n");
+	ESWAP_ADDSUB(a, b);
+	printf("ESWAP_ADDSUB(a, b).\n");
 	printf("a = 0x%X.\n", a);
 	printf("b = 0x%X.\n", b);
 	printf("\n");
 
-	OSWAP_XOR(a, b);
-	printf("OSWAP_XOR(a, b).\n");
+	ESWAP_XOR(a, b);
+	printf("ESWAP_XOR(a, b).\n");
 	printf("a = 0x%X.\n", a);
 	printf("b = 0x%X.\n", b);
 	printf("\n");
 
-	OSWAP_BITSXOR(a, b, 0xFF00);
-	printf("OSWAP_BITSXOR(a, b, 0xFF00).\n");
+	ESWAP_BITSXOR(a, b, 0xFF00);
+	printf("ESWAP_BITSXOR(a, b, 0xFF00).\n");
 	printf("a = 0x%X.\n", a);
 	printf("b = 0x%X.\n", b);
 	printf("\n");
@@ -45,8 +45,8 @@ int main() {
 	printf("b = 0x%X.\n", b);
 	printf("\n");
 
-	OSWAP_BITS(a, b, 0xFF00);
-	printf("OSWAP_BITS(a, b, 0xFF00).\n");
+	ESWAP_BITS(a, b, 0xFF00);
+	printf("ESWAP_BITS(a, b, 0xFF00).\n");
 	printf("a = 0x%X.\n", a);
 	printf("b = 0x%X.\n", b);
 	printf("\n");

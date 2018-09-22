@@ -1,5 +1,3 @@
-# oswap
-
 Macros to swap variables in C.
 
 
@@ -9,7 +7,7 @@ Macros to swap variables in C.
 
 ```c
 // Swap variables using third variable.
-OSWAP_VAR(varx, vary, type)
+ESWAP_VAR(varx, vary, type)
 ```
 
 ```c
@@ -19,7 +17,7 @@ int b = 0x3344;
 printf("%x %x", a, b);
 
 // swap a, b
-OSWAP_VAR(a, b, int);
+ESWAP_VAR(a, b, int);
 printf("%x %x", a, b);
 ```
 
@@ -28,12 +26,12 @@ printf("%x %x", a, b);
 
 ```c
 // Swap variables using temporary buffer.
-OSWAP_BUF(varx, vary)
+ESWAP_BUF(varx, vary)
 ```
 
 ```c
 // swap a, b
-OSWAP_BUF(a, b);
+ESWAP_BUF(a, b);
 printf("%x %x", a, b);
 ```
 
@@ -42,12 +40,12 @@ printf("%x %x", a, b);
 
 ```c
 // Swap variables using addition and subtraction.
-OSWAP_ADDSUB(varx, vary)
+ESWAP_ADDSUB(varx, vary)
 ```
 
 ```c
 // swap a, b
-OSWAP_ADDSUB(a, b);
+ESWAP_ADDSUB(a, b);
 printf("%x %x", a, b);
 ```
 
@@ -56,12 +54,12 @@ printf("%x %x", a, b);
 
 ```c
 // Swap variables using XOR.
-OSWAP_XOR(varx, vary)
+ESWAP_XOR(varx, vary)
 ```
 
 ```c
 // swap a, b
-OSWAP_XOR(a, b);
+ESWAP_XOR(a, b);
 printf("%x %x", a, b);
 ```
 
@@ -70,12 +68,12 @@ printf("%x %x", a, b);
 
 ```c
 // Swap individual bits using XOR.
-OSWAP_BITSXOR(varx, vary, bits)
+ESWAP_BITSXOR(varx, vary, bits)
 ```
 
 ```c
 // swap higher 8 bits of a, b
-OSWAP_BITSXOR(a, b, 0xFF00);
+ESWAP_BITSXOR(a, b, 0xFF00);
 printf("%x %x", a, b);
 ```
 
@@ -98,11 +96,11 @@ printf("%x %x", a, b);
 
 ```c
 // Swap individual bits.
-OSWAP_BITS(varx, vary, bits)
+ESWAP_BITS(varx, vary, bits)
 ```
 
 ```c
 // swap higher 8 bits of a, b
-OSWAP_BITS(a, b, 0xFF00);
+ESWAP_BITS(a, b, 0xFF00);
 printf("%x %x", a, b);
 ```
