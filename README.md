@@ -2,6 +2,20 @@ Macros to swap variables in C.
 > Download: [header file](https://raw.githubusercontent.com/cppf/extra-swap/master/main.h).
 
 
+### default
+
+```c
+// Swap variables (xor).
+ESWAP(vara, varb)
+```
+
+```c
+// swap a, b
+ESWAP(a, b);
+printf("%x %x", a, b);
+```
+
+
 ### var
 
 ```c
@@ -73,20 +87,6 @@ ESWAP_BITSXOR(varx, vary, bits)
 ```c
 // swap higher 8 bits of a, b
 ESWAP_BITSXOR(a, b, 0xFF00);
-printf("%x %x", a, b);
-```
-
-
-### .
-
-```c
-// Swap variables.
-OSWAP(vara, varb)
-```
-
-```c
-// swap a, b
-OSWAP(a, b);
 printf("%x %x", a, b);
 ```
 

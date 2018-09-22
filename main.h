@@ -70,7 +70,7 @@
 
 // Swap variables.
 // args: varx, vary.
-#define OSWAP(X, Y) \
+#define ESWAP(X, Y) \
 	ESWAP_XOR(X, Y)
 
 
